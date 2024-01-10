@@ -13,6 +13,8 @@ This photo is from Jan 2024. You may notice an unused backup solenoid valve on t
 
 The two Y axis motors are connected to a single driver, this is a feature of the controller board.
 
+There is a [video](https://twitter.com/machdyne/status/1705911534369574982) of the machine in action.
+
 ## Specifications
 
 | Attribute | Value |
