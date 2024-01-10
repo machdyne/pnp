@@ -4,9 +4,9 @@
 
 Machdyne PNP is an open-source project to describe and document the pick-and-place machines that we're using to assist with the assembly of some of our [products](https://machdyne.com).
 
-Instead of a turnkey solution this project will aim to provide examples for anyone who wants to build a custom pick-and-place machine in order to meet their own specific requirements, to understand the machine from the top to bottom, and to have the ability to maintain, modify and repair it.
+Instead of a turnkey solution this project will aim to provide examples for anyone who wants (1) to build a custom pick-and-place machine in order to meet their own specific requirements, (2) to understand the machine from the top to bottom, and (3) to have the ability to maintain, modify and repair it.
 
-These machines are designed to work with the [OpenPnP](https://github.com/openpnp/openpnp) software. Instead of attemping to recreate the OpenPnP documentation we will provide links and notes to help you move through the setup process. Our documentation will aim to fill the gaps that we encountered while researching how to build and use such a machine.
+These machines are designed to work with the [OpenPnP](https://github.com/openpnp/openpnp) software. Instead of attempting to recreate the OpenPnP documentation we will provide links and notes to help you move through the setup process. Our documentation will aim to fill the gaps that we encountered while researching how to build and use such a machine.
 
 ### [Machine Eins](machines/eins)
 
