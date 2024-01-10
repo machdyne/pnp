@@ -15,15 +15,13 @@ The two Y axis motors are connected to a single driver, this is a feature of the
 
 ## Specifications
 
-Table size: 1200mm x 750mm
-
-Machine size: ~1000mm x ~650mm
-
-Work area: ~850mm x ~450mm
-
-Minimum tested part size: 0402
-
-Max Placement Speed: TBD
+| Attribute | Value |
+| --------- | ----- |
+| Table size | 1200mm x 750mm |
+| Machine size | ~1000mm x ~650mm |
+| Work area | ~850mm x ~450mm |
+| Minimum tested part size | 0402 |
+| Max placement speed | YTBD |
 
 ## Parts
 
