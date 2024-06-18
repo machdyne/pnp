@@ -25,6 +25,10 @@ There is a [video](https://twitter.com/machdyne/status/1705911534369574982) of t
 | Minimum tested part size | 0402 |
 | Max placement speed | YTBD |
 
+## Documentation
+
+  * [Assembly Guide](docs/ASSEMBLY.md)
+
 ## Parts
 
 The 3D-printable parts are located in the [3d](3d) directory as [OpenSCAD](https://openscad.org) files. You can use OpenSCAD to customize and generate the [STL](3d/stl) files, which can then be sliced and printed.
@@ -32,7 +36,7 @@ The 3D-printable parts are located in the [3d](3d) directory as [OpenSCAD](https
 | Part | Model | Quantity | Description |
 | ---- | ----- | -------- | ----------- |
 | [btpm](3d/stl/btpm.stl) | ![btpm](3d/img/btpm.png) | 3 | **Belt tension pulley mount.** Holds the belt in place at the opposite end of the axis as the motor, using a pulley and steel dowel. |
-| [dc](3d/stl/dc.stl) | ![dc](3d/img/dc.png) | 1 | **Drag chain links, clips and tower.** Keeps wires, cables and tubing lifted above the work area. The current design sags a bit when the chain is long and needs to be improved. |
+| [dc](3d/stl/dc.stl) | ![dc](3d/img/dc.png) | 1 | **Drag chain links, clips and tower.** Keeps wires, cables and tubing lifted above the work area. The current design sags a bit when the chain is long and needs to be improved. We recommend using a commodity dragchain instead. |
 | [dfcm](3d/stl/dfcm.stl) | ![dfcm](3d/img/dfcm.png) | 4 | **Down-facing camera mount.** Holds the down-facing camera. Attaches to the bottom rear side of the Z Gantry Mount Faceplate. |
 | [eec](3d/stl/eec.stl) | ![eec](3d/img/eec.png) | 1 | **Extrusion end cap.** Covers sharp edges at the ends of the aluminum extrusions. |
 | [gmbc](3d/stl/gmbc.stl) | ![gmbc](3d/img/gmbc.png) | 6 | **Gantry mount belt clamp.** Attaches belt ends to gantry mounts. |
@@ -55,7 +59,8 @@ The 3D-printable parts are located in the [3d](3d) directory as [OpenSCAD](https
 | Part | Quantity | Description | Example P/N |
 | ---- | -------- |------------ | ----------- |
 | Controller board | 1 | BIGTREETECH Octopus V1.1 Controller board + 4x TMC2209 drivers | KINPRINT-UUU001949 |
-| Stepper motors | 4 | 42x40x22mm, 1.68A, 1.8deg, 1.65ohm | 800-001-0782 |
+| (a) Stepper motors | 4 | 42x42x38mm, 1.68A, 1.8deg, 1.65ohm | 800-001-0782 |
+| or (b) Stepper motors | 4 | 42x42x38mm, 1.5A, 0.9deg, 2ohm | 17ME15-1504S |
 | Hollow stepper motor set | 1 | 28mm NEMA 11 hollow shaft, D6 rotary joint, CP40 holder | |
 | Nozzles | 1+ | CP40 nozzles, N045, N14, N24 | |
 | Power supply | 1 | Enclosed desktop supply, 24V 5A 120W, 2.5mm plug | GST120A24-P1M |
@@ -73,6 +78,9 @@ The 3D-printable parts are located in the [3d](3d) directory as [OpenSCAD](https
 | Rail Z axes | 2 | Linear rails, MGN9H, 100mm | B08GWVV75C |
 | Steel dowels | 3 | 5mm diameter x 25mm long | B07NXPQ717 |
 | GT2 belt kits | 2 | Belts and pulleys, 6mm wide, 2mm pitch | B07RBK4GRL |
+| Drag chain | 1 | 10x20 drag chain; 1m | 734900622184 |
+
+Note: Use the (a) stepper motors if more concerned with speed; or the (b) stepper motors if more concerned with accuracy.
 
 You will need an assortment of lengths of M3 and M5 bolts, nuts and T-nuts and screws. You will also need some M2 bolts and nuts to attach the limit switches.
 

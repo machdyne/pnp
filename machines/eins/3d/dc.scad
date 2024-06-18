@@ -8,8 +8,9 @@
 
 $fn = 100;
 
+dctc();
 //dct();
-dcl();
+//dcl();
 //color([0,0,1]) dcc();
 
 // drag chain link
@@ -86,6 +87,36 @@ module dct() {
 		
 }
 
+// drag chain tower for common drag chain
+module dctc() {
+	
+	difference() {
+		
+		union() {
+			minkowski() {
+				cube([15-5,25-5,95], center=true);
+				sphere(2.5);
+			}
+			translate([0,0,-35]) minkowski() {
+				cube([20-5,25-5,20], center=true);
+				sphere(2.5);
+			}
+
+			translate([0,0,-49]) cube([20,50,8], center=true);	
+		}
+
+		rotate([0,90,0]) translate([-40,5,-25]) cylinder(d=4, h=50);
+		rotate([0,90,0]) translate([-40,-5,-25]) cylinder(d=4, h=50);
+		
+		
+		rotate([0,0,90]) {
+			translate([-18.5,0,0]) cylinder(d=5.5, h=200, center=true);
+			translate([18.5,0,0]) cylinder(d=5.5, h=200, center=true);
+		}
+		
+	}
+		
+}
 module roundedcube(xx, yy, height, radius)
 {
     translate([0,0,height/2])

@@ -12,11 +12,10 @@
  
 $fn = 36;
  
-has_dc_mount = true;
+//gmbc(); // belt clamp + optional custom dragchain
+gmbc_dcc(); // dual belt clamp + commodity dragchain
  
-gmbc();
- 
-module gmbc() {
+module gmbc(has_dc_mount=false) {
 	
 	difference() {
 	
@@ -65,3 +64,74 @@ module gmbc() {
 	}
 	
 }
+
+ 
+module gmbc_dcc() {
+
+	difference() {
+	
+		union() {
+			cube([4,42.5,19.5], center=true);
+			
+			translate([2,-4-16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,-2-16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,0-16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,2-16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,4-16,0]) cube([1.25,0.5,7.5], center=true);
+
+			translate([2,-4+16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,-2+16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,0+16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,2+16,0]) cube([1.25,0.5,7.5], center=true);
+			translate([2,4+16,0]) cube([1.25,0.5,7.5], center=true);
+			
+		}
+		
+		rotate([0,90,0]) {
+			translate([-6,16,0]) cylinder(d=3.5, h=100, center=true);
+			translate([6,16,0]) cylinder(d=3.5, h=100, center=true);
+			translate([-6,16,-2.5]) cylinder(d=6, h=5, center=true);
+			translate([6,16,-2.5]) cylinder(d=6, h=5, center=true);
+
+			translate([-6,-16,0]) cylinder(d=3.5, h=100, center=true);
+			translate([6,-16,0]) cylinder(d=3.5, h=100, center=true);
+			translate([-6,-16,-2.5]) cylinder(d=6, h=5, center=true);
+			translate([6,-16,-2.5]) cylinder(d=6, h=5, center=true);
+			
+			translate([0,5,-5]) cylinder(d=6, h=30);	
+			translate([0,-5,-5]) cylinder(d=6, h=30);	
+
+		}
+
+
+	}
+
+	translate([-13,0,0]) rotate([90,0,0]) {
+			
+			difference() {
+
+				
+				union() {
+					minkowski() {
+						cube([30-2,24-2,18], center=true);	
+						sphere(1);
+					}
+				}
+		
+				rotate([0,90,0]) translate([5,0,-30]) cylinder(d=4, h=25);	
+				rotate([0,90,0]) translate([-5,0,-30]) cylinder(d=4, h=25);	
+			
+				rotate([0,90,0]) translate([5,0,0]) cylinder(d=6, h=25);	
+				rotate([0,90,0]) translate([-5,0,0]) cylinder(d=6, h=25);	
+				
+				translate([-10,-8,-10]) cube([16,16,20]);
+				
+			}
+
+		}
+	
+}
+
+
+
+
