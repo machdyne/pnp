@@ -181,8 +181,8 @@ If using the BIGTREETECH Octopus with the Eins Marlin firmware configuration:
 |-----------|---------|
 | MOTOR0 | X axis |
 | MOTOR1 | Z axis |
-| MOTOR2 1 | Y axis |
-| MOTOR2 2 | Y axis |
+| MOTOR2 1 | Y axis right |
+| MOTOR2 2 | Y axis left |
 | MOTOR3 | C axis |
 | PG6 | X limit switch |
 | PG9 | Y limit switch |
