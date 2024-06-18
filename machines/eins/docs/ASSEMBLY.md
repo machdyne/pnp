@@ -43,7 +43,7 @@ Now attach the Y axes to the side of the `xytm` parts using M3 bolts and T-nuts,
 
 ## Step - Install the remaining frame extrusions.
 
-In order to complete the rectangular frame, attach the two remaining long extrusions to the near and far side of the `xytm` parts with M3 bolts and T-nuts and attach an `eec` to each end.
+In order to complete the rectangular frame, attach the two remaining long extrusions to the near and far side of the `xytm` parts with M3 bolts and T-nuts and attach an `eec` (Extrusion End Cap) to each end.
 
 The long extrusions are used for attaching accessories.
 
@@ -204,6 +204,16 @@ $ platformio run -e STM32F446ZE_btt_USB
 
 Then copy `.pio/build/STM32F446ZE_btt_USB/firmware.bin` to a MicroSD card, plug it into the controller, and turn on the power.
 
+## Step - Test the controller.
+
+You can test basic movements by sending G-code to the controller, but use caution to avoid collisions.
+
+G-code to move the X axis 10mm:
+
+```
+G0 X10
+```
+
 ## Step - Install the pneumatics.
 
 The pump can be mounted to the top, side or bottom of the table.
@@ -211,3 +221,23 @@ The pump can be mounted to the top, side or bottom of the table.
 The `svm` (Solenoid Valve Mount) can be used to mount the solenoid to the far side of the frame.
 
 The pneumatic tubing should be connected from the pump inlet to the solenoid, and the solenoid to the hollow shaft motor that is attached to `zam`.
+
+![](img/20240618_213504.jpg)
+
+## Step - Test the pneumatics.
+
+Move the nozzle over a small piece of paper, move the nozzle down until it's touching the paper, turn on the pump and solenoid, lift the nozzle, and then turn off the solenoid to drop the paper.
+
+G-code to turn the pump on and off:
+
+```
+M106 P0 S255
+M106 P0 S0
+```
+
+G-code to turn the solenoid on and off:
+
+```
+M106 P1 S255
+M106 P1 S0
+```
