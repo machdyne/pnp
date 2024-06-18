@@ -6,7 +6,7 @@ This guide will walk you through the process of assembling the pick-and-place ma
 
 If you have all of the parts pre-printed, it may be possible to build the machine in a day, but the instructions are presented in a way that will also allow you to build the machine incrementally over several days, printing parts as you go, and will allow you to test portions of it before moving forward.
 
-This guide references [3D-printed parts](pnp/machines/eins#parts) and items from the [Bill of Materials](pnp/machines/eins#bill-of-materials).
+This guide references [3D-printed parts](https://github.com/machdyne/pnp/tree/main/machines/eins#parts) and items from the [Bill of Materials](https://github.com/machdyne/pnp/tree/main/machines/eins#bill-of-materials).
 
 ## Step - Prepare the table.
 
