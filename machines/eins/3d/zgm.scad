@@ -14,7 +14,6 @@
  *
  * 4 x M3 x 12mm button head bolts (faceplace mounts)
  *
- *
  */
  
 $fn = 36;
@@ -22,7 +21,7 @@ $fn = 36;
 translate([10,0,0]) zam();
 zgm();
 zgmfp();
-zgmfpp();
+//zgmfpp();
 
 module zam() {
 	
@@ -162,7 +161,7 @@ module zgmfp() {
 			// pulley shaft guide
 			rotate([0,90,0]) translate([62.5,0,41.25]) cylinder(d=15, h=18.5, center=true);
 			// limit switch mount
-			translate([35,-32,45]) cube([12,8,20], center=true);
+			translate([35,-32,50]) cube([12,8,20], center=true);
 		}
 		
 		// high-res down-facing camera mount holes (dfcm)
@@ -175,10 +174,10 @@ module zgmfp() {
 				
 		// limit switch mount hole
 		rotate([90,0,0]) {
-			translate([36.5,37.5,0]) cylinder(d=2.5, h=100, center=true);
 			translate([36.5,42.5,0]) cylinder(d=2.5, h=100, center=true);
 			translate([36.5,47.5,0]) cylinder(d=2.5, h=100, center=true);
 			translate([36.5,52.5,0]) cylinder(d=2.5, h=100, center=true);
+			translate([36.5,57.5,0]) cylinder(d=2.5, h=100, center=true);
 		}
 		
 		// z axis shaft hole
@@ -205,17 +204,17 @@ module zgmfp() {
 		// linear rail mount holes
 		rotate([0,90,0]) {
 			// left rail
-			translate([55,-30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-20,-30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-40,-30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-60,-30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-80,-30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50,-30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-20,-30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-40,-30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-60,-30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-80,-30,0]) cylinder(d=3.25, h=100, center=true);
 			// right rail
-			translate([55,30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-20,30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-40,30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-60,30,0]) cylinder(d=3.25, h=100, center=true);
-			translate([55-80,30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50,30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-20,30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-40,30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-60,30,0]) cylinder(d=3.25, h=100, center=true);
+			translate([50-80,30,0]) cylinder(d=3.25, h=100, center=true);
 		}
 
 		// pulley shaft hole

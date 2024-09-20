@@ -20,6 +20,10 @@ The overall design was inspired by existing open-source pick-and-place machines,
 
 This is a future design based on our experience building and using Eins. Zwei will be more of an assembly assistant than a complete PnP machine. It will be more compact, somewhat portable and it won't require a dedicated table. It is intended for the production of boards with a small number of unique parts, or for placing the most common parts on a larger board (such as decoupling capacitors), or for precisely placing large components.
 
+### [Machdyne AF](https://github.com/machdyne/af)
+
+The [Machdyne AF](https://github.com/machdyne/af) project is a work-in-progress autofeeder system for our PNP machines.
+
 ## Funding
 
 This project is being partially funded through the NGI0 Entrust Fund, a fund established by NLnet with financial support from the European Commission's Next Generation Internet programme.
